@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle (bg-text-200) -->
+  <circle cx="16" cy="16" r="16" fill="#000000"/>
+
+  <!-- Letter C (text-bg-100) -->
+  <text x="16" y="16"
+        font-size="20"
+        font-weight="500"
+        fill="white"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-family="system-ui, -apple-system, sans-serif">C</text>
+</svg>
