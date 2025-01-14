@@ -60,7 +60,7 @@ export default function SideNav() {
             })}
 
             <a
-              href="mailto:colby@colbyhaskell.com"
+              href="mailto:chaskell35@gmail.com"
               className="block px-4 py-2 my-1 mt-4 rounded-md text-center text-gray-600 bg-gray-100 hover:bg-gray-200 transition-colors"
             >
               contact me
