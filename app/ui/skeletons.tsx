@@ -2,6 +2,40 @@
 const shimmer =
   'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
 
+export function ExperienceSkeleton({ className = '' }: { className?: string }) {
+  return (
+    <div className={className}>
+      <h2 className="text-xl font-semibold mb-4 text-gray-800">Experience</h2>
+      <div className="space-y-4">
+        <ExperienceCardSkeleton />
+        <ExperienceCardSkeleton />
+        <ExperienceCardSkeleton />
+      </div>
+    </div>
+  );
+}
+
+function ExperienceCardSkeleton() {
+  return (
+    <div
+      className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-6 shadow-sm`}
+    >
+      <div className="flex justify-between items-start mb-2">
+        <div>
+          <div className="h-6 w-48 bg-gray-200 rounded mb-2"></div>
+          <div className="h-5 w-36 bg-gray-200 rounded"></div>
+        </div>
+        <div className="h-5 w-32 bg-gray-200 rounded"></div>
+      </div>
+      <div className="space-y-2 mt-4">
+        <div className="h-4 w-full bg-gray-200 rounded"></div>
+        <div className="h-4 w-full bg-gray-200 rounded"></div>
+        <div className="h-4 w-3/4 bg-gray-200 rounded"></div>
+      </div>
+    </div>
+  );
+}
+
 export function CardSkeleton() {
   return (
     <div

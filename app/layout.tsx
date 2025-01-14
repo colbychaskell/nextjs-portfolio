@@ -1,3 +1,6 @@
+import '@/app/ui/global.css'
+import SideNav from '@/app/ui/nav/sidenav'
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="flex h-screen">
+          <SideNav />
+          <div className="flex-grow p-6 md:p-12 md:ml-64">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
