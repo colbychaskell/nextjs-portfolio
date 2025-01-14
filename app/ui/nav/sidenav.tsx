@@ -16,11 +16,11 @@ function SocialLinks() {
   const socialLinks = fetchSocialLinks();
 
   return (
-  <div className="flex justify-center gap-4"  >
-    {socialLinks.map((socialLink) => (
-      <SocialLink key={socialLink.href} socialLink={socialLink} />
-    ))}
-  </div>
+    <div className="flex justify-center gap-4"  >
+      {socialLinks.map((socialLink) => (
+        <SocialLink key={socialLink.href} socialLink={socialLink} />
+      ))}
+    </div>
   );
 }
 
@@ -40,21 +40,19 @@ export default function SideNav() {
       </button>
 
       <aside
-        className={`fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 shadow-lg transform transition-transform duration-200 ease-in-out md:translate-x-0 md:shadow-none ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 shadow-lg transform transition-transform duration-200 ease-in-out md:translate-x-0 md:shadow-none ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <nav className="h-full flex flex-col p-4">
-          <div className="flex-grow">
+          <div className="pt-12 sm:pt-0 flex-grow">
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`block px-4 py-2 my-1 rounded-md transition-colors ${
-                    isActive ? 'bg-gray-100' : 'hover:bg-gray-50'
-                  }`}
+                  className={`block px-4 py-2 my-1 rounded-md transition-colors ${isActive ? 'bg-gray-100' : 'hover:bg-gray-50'
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -77,4 +75,4 @@ export default function SideNav() {
       </aside>
     </>
   );
-} 
+}

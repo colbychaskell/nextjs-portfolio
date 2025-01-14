@@ -96,7 +96,7 @@ function TitleSection({ className }: { className?: string }) {
             Software Engineer | Full Stack Developer
           </p>
           {/* Open to Work Badge */}
-          <div className="relative sm:flex bg-green-50 px-2.5 py-1 rounded-md text-xs font-medium border border-green-200 shadow-[0_2px_8px_-2px_rgba(22,101,52,0.25)] whitespace-nowrap items-center gap-1.5 hover:bg-green-100 transition-colors overflow-hidden w-fit">
+          <div className="hidden relative sm:flex bg-green-50 px-2.5 py-1 rounded-md text-xs font-medium border border-green-200 shadow-[0_2px_8px_-2px_rgba(22,101,52,0.25)] whitespace-nowrap items-center gap-1.5 hover:bg-green-100 transition-colors overflow-hidden w-fit">
             <div className="absolute inset-0 bg-gradient-radial from-green-200/50 via-transparent to-transparent opacity-75" />
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
