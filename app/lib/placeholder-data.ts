@@ -72,15 +72,15 @@ const projects: Project[] = [
     link: "https://github.com/transitmatters/new-train-tracker",
     preview: "https://traintracker.transitmatters.org",
   },
-  // {
-  //   title: "Machine Learning Research",
-  //   status: "Completed",
-  //   tech: ["Python", "TensorFlow", "Scikit-learn", "Pandas"],
-  //   description:
-  //     "Research project focused on machine learning applications in environmental monitoring. Developed models for analyzing and predicting environmental patterns.",
-  //   link: "https://github.com/colbyhaskell/machine-learning-research",
-  //   preview: "https://github.com/colbyhaskell/machine-learning-research",
-  // },
+  {
+    title: "BetterBrews iOS App",
+    status: "Completed",
+    tech: ["SwiftUI", "Swift", "iOS", "Mobile Development"],
+    description:
+      "Created an iOS application for tracking coffee breweing data for various brew methods and recipes.",
+    link: "https://github.com/BetterBrews/BetterBrews-IOS",
+    preview: "",
+  },
   // {
   //   title: "Personal Portfolio",
   //   status: "Completed",
