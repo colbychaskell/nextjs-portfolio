@@ -18,7 +18,7 @@ export function ProfileCard({
 
 
   return (
-    <a href={link}>
+    <a href={link} target="_blank">
       <div className="p-4 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
         <div className="flex gap-4">
           {image && <div className="w-12 h-12 flex-shrink-0 self-center">{image}</div>}

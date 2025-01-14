@@ -20,11 +20,10 @@ export default function ProjectCard({
       <div className="flex justify-between items-start mb-4">
         <h2 className="text-xl font-medium text-gray-900">{title}</h2>
         <span
-          className={`px-3 py-1 rounded-full text-sm ${
-            status === 'Completed'
+          className={`px-3 py-1 rounded-full text-sm ${status === 'Completed'
               ? 'bg-green-100 text-green-800'
               : 'bg-yellow-100 text-yellow-800'
-          }`}
+            }`}
         >
           {status}
         </span>
@@ -62,4 +61,4 @@ export default function ProjectCard({
       </div>
     </div>
   );
-} 
+}
