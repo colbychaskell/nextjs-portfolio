@@ -31,9 +31,7 @@ export function EmptyState({ message, children }: EmptyStateProps) {
       <h3 className="mt-2 text-sm font-semibold text-gray-900">
         {message}
       </h3>
-      <p className="mt-1 text-sm text-gray-500">
-        {children}
-      </p>
+      {children}
       <div className="mt-6">
         <a
           href="/"
