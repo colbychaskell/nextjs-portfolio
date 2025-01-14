@@ -11,15 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default async function Page() {
   return (
     <div className={`${inter.className} max-w-4xl mx-auto py-8 px-4`}>
-      <TitleSection className="mb-8" />
-      <AboutSection className="mb-8" />
-      <EducationSection className="mb-8" />
+      <TitleSection className="mb-12" />
+      <AboutSection className="mb-12" />
+      <EducationSection className="mb-12" />
 
       <Suspense fallback={<ExperienceSkeleton />}>
-        <ExperienceSection className="mb-8" />
+        <ExperienceSection className="mb-12" />
       </Suspense>
 
-      <ProjectsSection className="mb-8" />
+      <ProjectsSection className="" />
     </div>
   );
 }
@@ -76,7 +76,7 @@ function TitleSection({ className }: { className?: string }) {
     <div className={className}>
       <div className="flex flex-col items-center sm:flex-row sm:items-center sm:gap-8">
         {/* Profile Photo */}
-        <div className="relative mb-4 sm:mb-0">
+        <div className="mb-4 sm:mb-0">
           <div className="w-32 h-32 rounded-full overflow-hidden">
             <Image
               src="/profile-photo.jpg"
