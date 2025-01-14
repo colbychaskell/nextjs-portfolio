@@ -4,7 +4,7 @@ interface SocialLinkProps {
   socialLink: SocialLink;
 }
 
-export default function SocialLink({ socialLink }: SocialLinkProps) {
+export default function NavSocialLink({ socialLink }: SocialLinkProps) {
   return (
     <a
       href={socialLink.href}
@@ -18,4 +18,4 @@ export default function SocialLink({ socialLink }: SocialLinkProps) {
       </svg>
     </a>
   );
-} 
+}

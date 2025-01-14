@@ -3,8 +3,18 @@
 import { useState } from "react";
 import ProjectCard from "@/app/ui/projects/project-card";
 import { EmptyState } from "../empty-state";
+import { Project } from "@/app/lib/definitions";
 
-function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, sort, setSort }) {
+interface SearchAndFilterBarProps {
+  searchQuery: any;
+  setSearchQuery: any;
+  filter: any;
+  setFilter: any;
+  sort: any;
+  setSort: any;
+}
+
+function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, sort, setSort }: SearchAndFilterBarProps) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 mb-8">
       {/* Search Bar */}
@@ -47,7 +57,11 @@ function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, so
   );
 }
 
-export default function ProjectsFeed({ initialProjects }) {
+interface ProjectsFeedProps {
+  initialProjects: Project[];
+}
+
+export default function ProjectsFeed({ initialProjects }: ProjectsFeedProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState("");
   const [sort, setSort] = useState("");

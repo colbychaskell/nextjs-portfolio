@@ -1,4 +1,4 @@
-import SocialLink from './social-link';
+import NavSocialLink from './social-link';
 
 const SOCIAL_LINKS = [
   {
@@ -22,13 +22,8 @@ export default function SocialLinks() {
   return (
     <div className="flex justify-center gap-4">
       {SOCIAL_LINKS.map((link) => (
-        <SocialLink
-          key={link.ariaLabel}
-          href={link.href}
-          ariaLabel={link.ariaLabel}
-          icon={link.icon}
-        />
+        <NavSocialLink socialLink={link} />
       ))}
     </div>
   );
-} 
+}

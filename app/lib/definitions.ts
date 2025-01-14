@@ -4,8 +4,9 @@
 // However, these types are generated automatically if you're using an ORM such as Prisma.
 export type Post = {
   title: string;
-  content: string;
-  id: string;
+  date: string;
+  preview: string;
+  slug: string;
 };
 
 export type Project = {
@@ -30,4 +31,3 @@ export type SocialLink = {
   ariaLabel: string;
   icon: string;
 };
-
