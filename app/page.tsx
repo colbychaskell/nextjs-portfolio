@@ -141,11 +141,11 @@ function AboutSection({ className }: { className?: string }) {
       <p className="text-black leading-relaxed text-[30] font-light font-inter">
         <span className="block mb-2 font-bold">Hey! 👋</span>
         <span className="font-bold">
-          I'm Colby, a Full-Stack Software Engineer with a background in real-time
-          Linux and embedded systems development.
+          I'm Colby, a Software Engineer building full-stack modern web applications.
         </span>
+        &nbsp;I am currently building simulation and test infrastructure for autonomous aerospace systems.
       </p>
-    </div>
+    </div >
   );
 }
 
