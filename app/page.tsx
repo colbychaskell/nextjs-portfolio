@@ -81,8 +81,8 @@ function TitleSection({ className }: { className?: string }) {
             <Image
               src="/profile-photo.jpg"
               alt="Profile photo"
-              width={128}
-              height={128}
+              width={2976}
+              height={1984}
               className="w-full h-full object-cover"
               priority
             />
@@ -125,8 +125,8 @@ async function EducationSection({ className }: { className?: string }) {
           <Image
             src="/usc-logo.png"
             alt="USC logo"
-            width={48}
-            height={48}
+            width={1200}
+            height={1233}
             className="object-contain"
           />
         }
