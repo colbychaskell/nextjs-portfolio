@@ -36,9 +36,9 @@ function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, so
           onChange={(e) => setFilter(e.target.value)}
         >
           <option value="">All Projects</option>
-          <option value="recent">Most Recent</option>
-          <option value="tech">Technology</option>
-          <option value="category">Category</option>
+          {/* <option value="recent">Most Recent</option> */}
+          {/* <option value="tech">Technology</option> */}
+          {/* <option value="category">Category</option> */}
         </select>
       </div>
 
@@ -50,7 +50,7 @@ function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, so
           onChange={(e) => setSort(e.target.value)}
         >
           <option value="">Sort by</option>
-          <option value="recent">Most Recent</option>
+          {/* <option value="recent">Most Recent</option> */}
         </select>
       </div>
     </div>
@@ -58,16 +58,16 @@ function SearchAndFilterBar({ searchQuery, setSearchQuery, filter, setFilter, so
 }
 
 interface ProjectsFeedProps {
-  initialProjects: Project[];
+  allProjects: Project[];
 }
 
-export default function ProjectsFeed({ initialProjects }: ProjectsFeedProps) {
+export default function ProjectsFeed({ allProjects }: ProjectsFeedProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState("");
   const [sort, setSort] = useState("");
 
   // You can implement filtering logic here
-  const filteredProjects = initialProjects.filter((project) =>
+  const filteredProjects = allProjects.filter((project) =>
     project.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -83,7 +83,7 @@ export default function ProjectsFeed({ initialProjects }: ProjectsFeedProps) {
       />
 
       <div className="space-y-6">
-        {initialProjects.length === 0 ? (
+        {allProjects.length === 0 ? (
           <EmptyState message="No projects featured yet">
             <p className="mt-1 text-sm text-gray-500">View my GitHub at:
               <span className="text-blue-500">

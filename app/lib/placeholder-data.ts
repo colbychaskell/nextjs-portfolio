@@ -64,13 +64,13 @@ const posts: Post[] = [
 
 const projects: Project[] = [
   {
-    title: "New Train Tracker",
+    title: "Personal Portfolio",
     status: "Completed",
-    tech: ["React", "TypeScript", "Python", "Chalice"],
+    tech: ["NextJS", "React", "TypeScript", "Web"],
     description:
-      "Website to track locations of the new MBTA trains throughout the system. Contributed to the Front-End styling and routing system.",
-    link: "https://github.com/transitmatters/new-train-tracker",
-    preview: "https://traintracker.transitmatters.org",
+      "(You are here!) My current portfolio website created with NextJS",
+    link: "https://github.com/colbychaskell/nextjs-portfolio",
+    preview: "#",
   },
   {
     title: "BetterBrews iOS App",
@@ -80,6 +80,15 @@ const projects: Project[] = [
       "Created an iOS application for tracking coffee breweing data for various brew methods and recipes.",
     link: "https://github.com/BetterBrews/BetterBrews-IOS",
     preview: "",
+  },
+  {
+    title: "New Train Tracker",
+    status: "Completed",
+    tech: ["React", "TypeScript", "Python", "Chalice"],
+    description:
+      "Website to track locations of the new MBTA trains throughout the system. Contributed to the Front-End styling and routing system.",
+    link: "https://github.com/transitmatters/new-train-tracker",
+    preview: "https://traintracker.transitmatters.org",
   },
   // {
   //   title: "Personal Portfolio",
